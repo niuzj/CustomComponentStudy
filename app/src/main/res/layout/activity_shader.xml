@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btShader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="阴影"/>
+
+        <Button
+            android:id="@+id/btGradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="渐变"/>
+
+        <Button
+            android:id="@+id/btWeiTu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="位图运算、图层学习"/>
+
+    </LinearLayout>
+
+</layout>

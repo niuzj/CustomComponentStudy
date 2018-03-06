@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <!--
+            flexWrap:决定Flex 容器是单行还是多行
+            justifyContent:控制元素主轴方向上的对齐方式
+            alignItems:控制元素在副轴方向的对齐方式
+            -->
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:alignItems="flex_start"
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"/>
+
+            <ImageView
+                android:id="@+id/ivShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>
